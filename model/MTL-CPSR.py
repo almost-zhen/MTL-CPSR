@@ -2,7 +2,7 @@ import torch
 from .layers import EmbeddingLayer, MultiLayerPerceptron
 
 
-class MTL-CPSRModel_self_2(torch.nn.Module):
+class MTL-CPSR(torch.nn.Module):
 
     def __init__(self, categorical_field_dims, numerical_num, embed_dim, reduction_ratio, bottom_mlp_dims, tower_mlp_dims, task_num, shared_expert_num, specific_expert_num, dropout):
         super().__init__()
